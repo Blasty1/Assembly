@@ -5,8 +5,8 @@ result: .space 0
 .globl main
 .ent main
 main:
-	lw $t2, (add1)
-	sw $t2 , (result)
+	lw $t2, add1
+	sw $t2 , result
 	li $v0,10
 	syscall
 .end main
