@@ -2,7 +2,7 @@
 giorni: .byte 3
 minuti: .byte 5
 ore: .byte 4
-word: .word risultato
+risultato: .word 0
 .text
 .globl main 
 .ent main
@@ -20,7 +20,7 @@ main:
 
     add $t3,$t3,$t0
 
-    sw $t3,word
+    sw $t3,risultato
     
 
     li $v0, 10
